@@ -178,7 +178,7 @@ body {
 /* bloc image fixe en haut de la carte */
 .card-img {
     width: 100%;
-    aspect-ratio: 16 / 9;  /* mets 1 / 1 si tu veux carré */
+    aspect-ratio: 16 / 9;  /* change à 1/1 si tu veux un format carré */
     background: #020617;
     overflow: hidden;
 }
@@ -277,5 +277,11 @@ body {
 
     .mail-top p {
         font-size: 0.9rem;
+    }
+
+    /* 👉 2 cartes par ligne sur mobile */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
